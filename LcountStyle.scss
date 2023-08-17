@@ -1,0 +1,100 @@
+@import './LcountLib.scss';
+
+@font-face {
+    font-family: rht-bold;
+    src: url("./fonts/RedHatText-Bold.ttf");
+}
+@font-face {
+    font-family: rht-semibold;
+    src: url("./fonts/RedHatText-SemiBold.ttf");
+}
+@font-face {
+    font-family: rht-light;
+    src: url("./fonts/RedHatText-Light.ttf");
+}
+
+body {
+    width: 1440px;
+    height: 550px;
+    background-image: url("/images/bg-stars.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: $Very_dark_blue;
+    font-family: 'rht-bold';
+    color: $White;
+    letter-spacing: 6px;
+}
+
+div.bottom_paper {
+    position: fixed;
+    width: 100%;
+    height: 160px;
+    bottom: 0;
+    left: 0%;
+    background-image: url("/images/pattern-hills.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    background-color: $Dark_desaturated_blue1;
+}
+
+div.smedia_div {
+    z-index: 999;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    position: fixed;
+    top: 88%; 
+    left: 45%;
+}
+
+div.head_1 {
+    display: grid;
+    place-items: center;
+    margin-top: 50px;
+}
+
+div.timer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    margin-top: 90px;
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 24px;
+    }
+    div.seconds {
+        width: 190px;
+        div.time_1 {
+            div.seconds_nnumber {
+                padding: 24px;
+            }
+        }
+    }
+}
+
+div.time_number {
+    font-size: 6em;
+    color: $Soft_red;
+    padding: 16px;
+    z-index: -1;
+}
+div.time_word {
+    font-family: 'rht-light';
+    font-size: small;
+}
+
+div.time_1 {
+    background-image: linear-gradient(to bottom, hsl(237, 22%, 20%) 52%, hsl(234, 15%, 26%) 48%);
+    z-index: 99;
+    border-radius: 15px;
+}
+
